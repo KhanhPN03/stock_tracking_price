@@ -1,0 +1,115 @@
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { FaArrowUp, FaArrowDown, FaTimes } from 'react-icons/fa';
+
+const ItemContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 2fr 1fr 1fr auto;
+  }
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+  
+  &:last-child {
+    border-bottom: none;
+  }
+`;
+
+const Symbol = styled(Link)`
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const Name = styled.div`
+  color: var(--gray-color);
+  display: none;
+  
+  @media (min-width: 768px) {
+    display: block;
+  }
+`;
+
+const Price = styled.div`
+  font-weight: 600;
+  text-align: right;
+`;
+
+const Change = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 500;
+  color: ${props => props.isPositive ? 'var(--success-color)' : 'var(--danger-color)'};
+  
+  svg {
+    margin-right: 0.25rem;
+  }
+`;
+
+const RemoveButton = styled.button`
+  background-color: transparent;
+  border: none;
+  color: var(--gray-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  
+  &:hover {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: var(--danger-color);
+  }
+`;
+
+const WatchlistItem = ({ stock, onRemove }) => {
+  const { symbol, name, price, change, percentChange } = stock;
+  const isPositive = change >= 0 || percentChange >= 0;
+  
+  return (
+    <ItemContainer>
+      <Symbol to={`/stocks/${symbol}`}>
+        {symbol}
+      </Symbol>
+      
+      <Name>{name}</Name>
+      
+      <Price>
+        {new Intl.NumberFormat('vi-VN', {
+          style: 'decimal',
+          maximumFractionDigits: 0
+        }).format(price)}
+      </Price>
+      
+      <Change isPositive={isPositive}>
+        {isPositive ? <FaArrowUp size={12} /> : <FaArrowDown size={12} />}
+        {Math.abs(percentChange || change).toFixed(2)}%
+      </Change>
+      
+      <RemoveButton 
+        onClick={() => onRemove(symbol)}
+        title="Remove from watchlist"
+      >
+        <FaTimes size={16} />
+      </RemoveButton>
+    </ItemContainer>
+  );
+};
+
+export default WatchlistItem;

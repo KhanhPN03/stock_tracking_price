@@ -1,0 +1,342 @@
+# =======================
+# VIETNAMESE STOCK MARKET
+# .gitignore File
+# Author: Laza
+# =======================
+
+# ==================== NODE.JS ====================
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# ==================== ENVIRONMENT VARIABLES ====================
+# Environment configuration files (SENSITIVE)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.production
+.env.staging
+
+# Configuration files with sensitive data
+config.json
+config.js
+secrets.json
+credentials.json
+
+# ==================== DATABASE ====================
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# PostgreSQL dumps
+*.sql
+*.dump
+*.backup
+
+# Database configuration files
+database.json
+db-config.js
+
+# ==================== API KEYS & SECRETS ====================
+# API keys and secrets (CRITICAL)
+api-keys.json
+secrets/
+keys/
+certificates/
+*.key
+*.pem
+*.p12
+*.crt
+*.cer
+*.der
+
+# JWT secrets
+jwt-secret.txt
+auth-config.js
+
+# Third-party API configurations
+eodhd-config.js
+alpha-vantage-config.js
+coinapi-config.js
+
+# ==================== LOGS ====================
+# Log files
+logs/
+*.log
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime logs
+combined.log
+error.log
+access.log
+debug.log
+
+# PM2 logs
+pm2.log
+pm2-error.log
+
+# ==================== REACT/FRONTEND ====================
+# Build outputs
+build/
+dist/
+out/
+
+# React development files
+.eslintcache
+
+# Create React App files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ==================== TEMPORARY FILES ====================
+# Temporary folders
+tmp/
+temp/
+.tmp/
+.temp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ==================== IDEs & EDITORS ====================
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ==================== DOCKER ====================
+# Docker files
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+
+# ==================== TESTING ====================
+# Test coverage
+coverage/
+*.lcov
+test-results/
+junit.xml
+
+# Jest
+jest-coverage/
+
+# ==================== SECURITY ====================
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# Security scan results
+security-report.json
+vulnerability-report.json
+
+# ==================== BACKUPS ====================
+# Backup files
+*.backup
+*.bak
+*.old
+backup/
+backups/
+
+# ==================== DEPLOYMENT ====================
+# Deployment files
+.deploy/
+deployment/
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+
+# Kubernetes secrets
+*.yaml.secret
+k8s-secrets/
+
+# ==================== ANALYTICS & MONITORING ====================
+# Application monitoring
+newrelic.js
+.newrelic_agent.log
+
+# Analytics
+google-analytics.json
+mixpanel-config.js
+
+# ==================== CUSTOM PROJECT FILES ====================
+# Stock market specific files
+market-data-cache/
+stock-prices-backup/
+trading-logs/
+user-data-exports/
+
+# Email templates (if containing sensitive info)
+email-templates-private/
+
+# Reports and exports
+reports/
+exports/
+data-exports/
+
+# Cache directories
+.cache/
+cache/
+redis-cache/
+
+# Session storage
+sessions/
+.sessions/
+
+# ==================== MISC ====================
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Webpack
+webpack-stats.json
+
+# Bundle analyzer
+bundle-analyzer-report.html
+
+# ==================== IMPORTANT NOTES ====================
+# 
+# ALWAYS REVIEW BEFORE COMMITTING:
+# 1. Check for API keys in any new files
+# 2. Verify database connection strings are not exposed
+# 3. Ensure user data is not accidentally committed
+# 4. Review log files for sensitive information
+# 
+# SECURITY REMINDERS:
+# - Never commit .env files
+# - Keep API keys in environment variables only
+# - Regularly rotate secrets and keys
+# - Use secure credential management in production
+#
+# =======================
