@@ -3,14 +3,11 @@
 <div align="center">
 
 ![Vietnam Stock Market](https://img.shields.io/badge/Market-Vietnam-red?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
 *A professional, full-stack web application for tracking Vietnamese stock market data with real-time insights and portfolio management.*
-
-[🚀 Demo](#demo) • [📚 Documentation](#documentation) • [🛠️ Installation](#installation) • [🤝 Contributing](#contributing)
 
 </div>
 
@@ -287,15 +284,11 @@ POST   /api/watchlists             # Create watchlist
 - [ ] Multi-language support
 - [ ] Dark mode theme
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Author
 
 **Laza**
-- GitHub: [@laza](https://github.com/laza)
-- Email: laza@example.com
+- GitHub: [@KhanhPN03]([https://github.com/laza](https://github.com/KhanhPN03))
+- Email: khanhpn31@gmail.com
 
 ## 🙏 Acknowledgments
 
@@ -310,6 +303,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ Star this repository if you find it helpful!**
 
-Made with ❤️ for the Vietnamese investment community
+Made with ❤️ from Laza for the Vietnamese investment community
 
 </div>
